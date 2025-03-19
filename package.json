@@ -1,9 +1,12 @@
 {
   "name": "@elevate_agency/n8n-nodes-gtm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node N8N to interact with Google Tag Manager",
   "keywords": [
-    "n8n-community-node-package", "Google Tag Manager", "GTM", "N8N"
+    "n8n-community-node-package",
+    "Google Tag Manager",
+    "GTM",
+    "N8N"
   ],
   "license": "MIT",
   "homepage": "https://github.com/elevate-agency-data/n8n-nodes-gtm",
@@ -13,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/elevate-agency-data/n8n-nodes-gtm.git"
+    "url": "git+https://github.com/elevate-agency-data/n8n-nodes-gtm.git"
   },
   "main": "index.js",
   "scripts": {
