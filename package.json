@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-gtm",
-  "version": "0.1.0",
+  "name": "@elevate_agency/n8n-nodes-gtm",
+  "version": "1.0.0",
   "description": "Node N8N to interact with Google Tag Manager",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package", "Google Tag Manager", "GTM", "N8N"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/guiElevate/n8n_gtm",
+  "homepage": "https://github.com/elevate-agency-data/n8n-nodes-gtm",
   "author": {
-    "name": "Guillaume Sinnaeve",
-    "email": "guilalume.sinnaeve@elevate-agency.com"
+    "name": "elevate_agency",
+    "email": "conseil@elevate-agency.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/guiElevate/n8n_gtm.git"
+    "url": "https://github.com/elevate-agency-data/n8n-nodes-gtm.git"
   },
   "main": "index.js",
   "scripts": {
