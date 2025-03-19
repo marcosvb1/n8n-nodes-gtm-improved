@@ -7,9 +7,9 @@ Google Tag Manager is a tag management system that allows users to quickly and e
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.  
 
 [Installation](#installation)  
-[Credentials](#credentials) 
+[Credentials](#credentials)    
 [Operations](#operations)   
-[Compatibility](#compatibility)  
+[Compatibility](#compatibility)   
 [Usage](#usage)  
 [Resources](#resources)  
 

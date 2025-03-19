@@ -3,7 +3,7 @@ const { Gtm } = require('./dist/nodes/Gtm/Gtm.node.js');
 
 module.exports = {
 	nodeTypes: {
-		Gtm: Gtm,
+		gtm: Gtm,
 	},
 	credentialTypes: {
 		GoogleTagManagerApi: require('./dist/credentials/GoogleTagManagerApi.credentials.js').GoogleTagManagerApi,
