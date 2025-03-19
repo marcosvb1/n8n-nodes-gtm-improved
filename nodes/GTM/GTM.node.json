@@ -1,0 +1,20 @@
+{
+  "node": "n8n-nodes-gtm.GTM",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": [
+    "Google"
+  ],
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://developers.google.com/tag-platform/tag-manager/api/v2/"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://developers.google.com/tag-platform/tag-manager/api/v2/"
+      }
+    ]
+  }
+}
