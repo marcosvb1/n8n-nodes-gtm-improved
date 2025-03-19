@@ -7,12 +7,11 @@ Google Tag Manager is a tag management system that allows users to quickly and e
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.  
 
 [Installation](#installation)  
-[Operations](#operations)  
-[Credentials](#credentials)  
+[Credentials](#credentials) 
+[Operations](#operations)   
 [Compatibility](#compatibility)  
 [Usage](#usage)  
 [Resources](#resources)  
-[Version history](#version-history)  
 
 ## Installation  
 
@@ -26,7 +25,11 @@ cd n8n-nodes-gtm
 npm install  
 ```  
 
-Then, place the node file in the `~/.n8n/custom-nodes` directory (or follow instructions specific to your n8n installation).  
+Then, place the node file in the `~/.n8n/custom-nodes` directory (or follow instructions specific to your n8n installation).   
+
+## Credentials  
+
+To use this node, you need a Google Cloud API key with access to Google Tag Manager.  
 
 ## Operations  
 
@@ -35,11 +38,7 @@ This node supports the following operations within Google Tag Manager:
 - Create, update, and delete GTM tags  
 - Manage variables and triggers  
 - Publish container versions  
-- Retrieve information from the [GTM API](https://developers.google.com/tag-platform/tag-manager/api/v2?hl=fr)  
-
-## Credentials  
-
-To use this node, you need a Google Cloud API key with access to Google Tag Manager.  
+- Retrieve information from the [GTM API](https://developers.google.com/tag-platform/tag-manager/api/v2?hl=fr) 
 
 ### Steps to obtain API credentials:  
 
@@ -60,8 +59,4 @@ Once installed and configured, this node can be used in n8n workflows to automat
 ## Resources  
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)  
-- [Google Tag Manager API documentation](https://developers.google.com/tag-platform/tag-manager/api/v2)  
-
-## Version history  
-
-- **1.0.0** - Initial release with basic GTM operations  
+- [Google Tag Manager API documentation](https://developers.google.com/tag-platform/tag-manager/api/v2)

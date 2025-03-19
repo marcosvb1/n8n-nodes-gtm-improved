@@ -8,7 +8,7 @@ import {
   JsonObject 
 } from 'n8n-workflow';
 
-export class GTM implements INodeType {
+export class Gtm implements INodeType {
   description:INodeTypeDescription = {
     displayName: 'Google Tag Manager',
     name: 'gtm',

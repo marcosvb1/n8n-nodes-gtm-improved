@@ -1,12 +1,14 @@
 {
   "name": "@elevate_agency/n8n-nodes-gtm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node N8N to interact with Google Tag Manager",
   "keywords": [
     "n8n-community-node-package",
-    "Google Tag Manager",
-    "GTM",
-    "N8N"
+    "gtm",
+    "gtm-node",
+    "gtm-n8n",
+    "gtm-n8n-node",
+    "gtm-n8n-node-package"
   ],
   "license": "MIT",
   "homepage": "https://github.com/elevate-agency-data/n8n-nodes-gtm",
@@ -33,10 +35,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/GTMApi.credentials.js"
+      "dist/credentials/GoogleTagManagerApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/GTM/GTM.node.js"
+      "dist/nodes/Gtm/Gtm.node.js"
     ]
   },
   "devDependencies": {
@@ -51,6 +53,6 @@
     "n8n-workflow": "*"
   },
   "dependencies": {
-    "@elevate_agency/n8n-nodes-gtm": "^1.0.2"
+    "@elevate_agency/n8n-nodes-gtm": "^1.0.3"
   }
 }
