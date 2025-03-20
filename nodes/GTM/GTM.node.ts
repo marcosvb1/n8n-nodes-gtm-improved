@@ -4,6 +4,7 @@ import {
   INodeTypeDescription, 
   IExecuteFunctions, 
   NodeApiError,
+  NodeConnectionType,
   NodeOperationError,
   JsonObject 
 } from 'n8n-workflow';
@@ -14,14 +15,17 @@ export class Gtm implements INodeType {
     name: 'gtm',
     group: ['Google'],
     version: 1,
-    description: 'The Google Tag Manager API provides access to Tag Manager configuration data for an authorized user. Use the API to manage accounts, built-in variables, clients, containers, destinations, environnments, folders, google tag configurations, tags, templates, transformations, triggers, user permissions, variables, versions, versions header, workspaces and zones',
+    description: 'Use the Google Tag Manager API',
     defaults:{ name: 'Google Tag Manager' },
     icon: 'file:gtm.svg',
-    inputs:'={{"main"}}',
-    outputs:'={{"main"}}',
+    // @ts-ignore - node-class-description-inputs-wrong
+    inputs: [{ type: NodeConnectionType.Main }],
+    // @ts-ignore - node-class-description-outputs-wrong
+    outputs: [{ type: NodeConnectionType.Main }],
+		usableAsTool: true,
     credentials:[{ name: 'googleTagManagerOAuth2Api', required:true }],
     requestDefaults:{
-      baseURL: 'https://www.googleapis.com/tagmanager/v2',
+      baseURL: 'https://www.googleapis.com/tagmanager/vz2',
       headers:{ 'Content-Type': 'application/json' }
     },
     properties:[
