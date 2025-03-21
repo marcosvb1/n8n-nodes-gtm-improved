@@ -13,7 +13,7 @@ export class Gtm implements INodeType {
   description:INodeTypeDescription = {
     displayName: 'Google Tag Manager',
     name: 'gtm',
-    group: ['Google'],
+    group: ['transform'],
     version: 1,
     description: 'Use the Google Tag Manager API',
     defaults:{ name: 'Google Tag Manager' },
