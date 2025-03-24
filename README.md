@@ -98,6 +98,7 @@ This node supports the following operations within Google Tag Manager:
     - Creates a custom template
     - Deletes a template
     - Gets a template
+    - Imports a template from gallery
     - Lists all templates
     - Reverts changes to a template
     - Updates a templates

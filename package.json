@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-gtm",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Node N8N to interact with Google Tag Manager",
   "keywords": [
     "n8n-community-node-package",
