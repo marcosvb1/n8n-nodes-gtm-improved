@@ -25,7 +25,7 @@ export class Gtm implements INodeType {
 		usableAsTool: true,
     credentials:[{ name: 'googleTagManagerOAuth2Api', required:true }],
     requestDefaults:{
-      baseURL: 'https://www.googleapis.com/tagmanager/vz2',
+      baseURL: 'https://www.googleapis.com/tagmanager/v2',
       headers:{ 'Content-Type': 'application/json' }
     },
     properties:[
