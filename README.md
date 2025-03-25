@@ -9,8 +9,8 @@ Google Tag Manager is a tag management system that allows users to quickly and e
 [Installation](#installation)  
 [Credentials](#credentials)    
 [Operations](#operations)   
-[Compatibility](#compatibility)   
-[Usage](#usage)  
+[Using as a Tool](#using-as-a-tool)  
+[Compatibility](#compatibility)  
 [Resources](#resources)  
 
 ## Installation  
@@ -169,13 +169,40 @@ Retrieve information from the [GTM API](https://developers.google.com/tag-platfo
 4. Create API credentials (API key or OAuth 2.0)  
 5. Add your API key to the authentication settings in n8n  
 
+## Using as a Tool
+
+This node can be used as a tool in n8n AI Agents. To enable community nodes as tools, you need to set the `N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE` environment variable to `true`.
+
+### Setting the Environment Variable
+
+**If you're using a bash/zsh shell:**
+```bash
+export N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+n8n start
+```
+
+**If you're using Docker:**
+Add to your docker-compose.yml file:
+```yaml
+environment:
+  - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+```
+
+**If you're using the desktop app:**
+Create a `.env` file in the n8n directory:
+```
+N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+```
+
+**If you want to set it permanently on Mac/Linux:**
+Add to your `~/.zshrc` or `~/.bash_profile`:
+```bash
+export N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+```
+
 ## Compatibility  
 
 - Tested with: 1.80.5 (Success)
-
-## Usage  
-
-Once installed and configured, this node can be used in n8n workflows to automate GTM operations such as managing containers, updating tags, and tracking real-time changes.  
 
 ## Resources  
 
