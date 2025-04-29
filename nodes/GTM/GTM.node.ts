@@ -328,8 +328,8 @@ export class Gtm implements INodeType {
         noDataExpression: true,
         displayOptions: { show: { resource: ['workspace'] } },
         options: [
-          { name: 'Crate Workspace', value: 'workspacesCreate', action: 'Creates a workspace', description: 'Creates a Workspace' },
           { name: 'Create Version Workspace', value: 'workspacesCreateVersion', action: 'Creates a container version from the entities present in the workspace', description: 'Creates a Container Version from the entities present in the workspace, deletes the workspace, and sets the base container version to the newly created version' },
+          { name: 'Create Workspace', value: 'workspacesCreate', action: 'Creates a workspace', description: 'Creates a Workspace' },
           { name: 'Delete Workspace', value: 'workspacesDelete', action: 'Deletes a workspace', description: 'Deletes a Workspace' },
           { name: 'Get Status Workspace', value: 'workspacesGetStatus', action: 'Finds conflicting and modified entities in the workspace', description: 'Finds conflicting and modified entities in the workspace' },
           { name: 'Get Workspaces', value: 'workspacesGet', action: 'Gets a workspace', description: 'Gets a Workspace' },
