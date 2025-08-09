@@ -4,7 +4,6 @@ import {
   INodeTypeDescription, 
   IExecuteFunctions, 
   NodeApiError,
-  NodeConnectionType,
   NodeOperationError,
   JsonObject 
 } from 'n8n-workflow';

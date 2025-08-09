@@ -38,7 +38,9 @@ npm install
 
 ## Credentials  
 
-To use this node, you need a Google Cloud API key with access to Google Tag Manager.  
+This node uses Google OAuth2 (single-service) credentials for Google Tag Manager. Create OAuth credentials and configure them in n8n using the built-in Google OAuth single-service credential type.  
+
+Reference: https://docs.n8n.io/integrations/builtin/credentials/google/oauth-single-service  
 
 ## Operations  
 

@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "plugins": ["n8n-nodes-base"],
+  "extends": [
+    "plugin:n8n-nodes-base/community",
+    "plugin:n8n-nodes-base/node"
+  ]
+}
+
