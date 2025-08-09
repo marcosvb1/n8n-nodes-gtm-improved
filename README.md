@@ -1,6 +1,11 @@
-# n8n-nodes-gtm  
+# n8n-nodes-gtm-improved  
 
-This is an n8n community node. It lets you interact with Google Tag Manager (GTM) in your n8n workflows.  
+This is an improved n8n community node for Google Tag Manager (GTM). It lets you interact with GTM in your n8n workflows with better data structure and direct array returns.
+
+## 🚀 Improvements over original:
+- **Direct array returns** - No more nested response objects
+- **Cleaner data structure** - Arrays come directly without wrapper objects  
+- **Better user experience** - Data ready to use immediately
 
 Google Tag Manager is a tag management system that allows users to quickly and easily update tags and code snippets on their websites or mobile apps.  
 
@@ -17,15 +22,19 @@ Google Tag Manager is a tag management system that allows users to quickly and e
 
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.  
 
-Alternatively, you can manually install it:  
+Install via npm:
+```bash
+npm install n8n-nodes-gtm-improved
+```
 
+Or install directly in n8n using the package name: `n8n-nodes-gtm-improved`
+
+Source code available at:
 ```sh  
-git clone https://github.com/elevate-agency-data/n8n-nodes-gtm.git 
-cd n8n-nodes-gtm 
+git clone https://github.com/marcosvb1/n8n-nodes-gtm-improved.git 
+cd n8n-nodes-gtm-improved 
 npm install  
-```  
-
-Then, place the node file in the `~/.n8n/custom-nodes` directory (or follow instructions specific to your n8n installation).   
+```   
 
 ## Credentials  
 
