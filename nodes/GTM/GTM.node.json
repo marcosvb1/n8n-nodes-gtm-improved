@@ -1,5 +1,5 @@
 {
-  "node": "n8n-nodes-gtm.Gtm",
+  "node": "@marcosvb1/n8n-nodes-gtm.Gtm",
   "nodeVersion": "1.0",
   "codexVersion": "1.0",
   "categories": [

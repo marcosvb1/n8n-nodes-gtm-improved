@@ -1197,8 +1197,32 @@ export class Gtm implements INodeType {
         };
 
         const responseData = await this.helpers.requestOAuth2.call(this, 'googleTagManagerOAuth2Api', requestConf);
-
-        returnData.push(JSON.parse(responseData));
+        
+        const parsedResponse = JSON.parse(responseData);
+        
+        // Se a resposta contém um array dentro de uma propriedade (como 'account', 'container', etc.)
+        // extrair os itens diretamente para evitar aninhamento
+        if (parsedResponse && typeof parsedResponse === 'object') {
+          // Procurar por propriedades que contêm arrays (padrão comum do GTM API)
+          const arrayProperties = Object.keys(parsedResponse).filter(key => 
+            Array.isArray(parsedResponse[key])
+          );
+          
+          if (arrayProperties.length === 1) {
+            // Se há apenas uma propriedade que é array, usar os itens diretamente
+            const arrayProperty = arrayProperties[0];
+            const items = parsedResponse[arrayProperty];
+            returnData.push(...items);
+          } else if (arrayProperties.length > 1) {
+            // Se há múltiplas propriedades array, manter a estrutura original
+            returnData.push(parsedResponse);
+          } else {
+            // Se não há arrays ou é um objeto único, adicionar como está
+            returnData.push(parsedResponse);
+          }
+        } else {
+          returnData.push(parsedResponse);
+        }
       } catch (error) {
         throw new NodeApiError(this.getNode(), {
           message: `Error calling GTM API: ${error.message}`,

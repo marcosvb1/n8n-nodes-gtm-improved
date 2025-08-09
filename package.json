@@ -1,7 +1,7 @@
 {
-  "name": "n8n-nodes-gtm",
-  "version": "1.0.9",
-  "description": "Node N8N to interact with Google Tag Manager",
+  "name": "@marcosvb1/n8n-nodes-gtm",
+  "version": "1.1.2",
+  "description": "Node N8N to interact with Google Tag Manager - Improved version with direct array returns",
   "keywords": [
     "n8n-community-node-package",
     "gtm",
@@ -11,14 +11,14 @@
     "gtm-n8n-node-package"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/elevate-agency-data/n8n-nodes-gtm",
+  "homepage": "https://github.com/marcosvb1/n8n-nodes-gtm-improved",
   "author": {
-    "name": "elevate_agency",
-    "email": "conseil@elevate-agency.com"
+    "name": "marcosvb1",
+    "email": "marcosvb1@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elevate-agency-data/n8n-nodes-gtm.git"
+    "url": "git+https://github.com/marcosvb1/n8n-nodes-gtm-improved.git"
   },
   "main": "index.js",
   "scripts": {
