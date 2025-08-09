@@ -1,5 +1,5 @@
 // This file ensures n8n can find and load your nodes and credentials
-const { Gtm } = require('./dist/nodes/Gtm/Gtm.node.js');
+const { Gtm } = require('./dist/nodes/GTM/GTM.node.js');
 
 module.exports = {
 	nodeTypes: {
