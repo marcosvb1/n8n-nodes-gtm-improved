@@ -14,7 +14,7 @@ export class GoogleTagManagerApi implements ICredentialType {
   name = 'googleTagManagerOAuth2Api';
   extends = ['googleOAuth2Api'];
   displayName = 'Google Tag Manager OAuth2 API';
-  documentationUrl = 'https://docs.n8n.io/integrations/builtin/credentials/google/oauth-single-service/';
+  documentationUrl = 'https://docs.n8n.io/integrations/builtin/credentials/google/oauth-single-service';
   icon: Icon = 'file:icons/gtm.svg';
 
   properties: INodeProperties[] = [

@@ -19,9 +19,9 @@ export class Gtm implements INodeType {
     defaults:{ name: 'Google Tag Manager' },
     icon: 'file:gtm.svg',
     // @ts-ignore - node-class-description-inputs-wrong
-    inputs: [{ type: NodeConnectionType.Main }],
+    inputs: ['main'],
     // @ts-ignore - node-class-description-outputs-wrong
-    outputs: [{ type: NodeConnectionType.Main }],
+    outputs: ['main'],
 		usableAsTool: true,
     credentials:[{ name: 'googleTagManagerOAuth2Api', required:true }],
     requestDefaults:{
