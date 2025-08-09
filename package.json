@@ -39,7 +39,7 @@
       "dist/credentials/GoogleTagManagerApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/GTM/Gtm.node.js"
+      "dist/nodes/GTM/GTM.node.js"
     ]
   },
   "devDependencies": {
